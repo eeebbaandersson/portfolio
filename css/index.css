@@ -1,0 +1,215 @@
+:root {
+    --primary-bg: rgb(103, 103, 103);
+    --text-color: #f3f4f6;
+    --border-color: #f3f4f6;
+    --border-radius: 8px;
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile first */
+
+body {
+    width: 100%;
+    background-color: var(--primary-bg);
+    font-family: var(--font-main);
+    line-height: 1.6;   
+}
+
+
+section {
+    padding: 2rem 1rem;
+    border: 1px solid white;   
+    text-align: center;
+}
+
+.hero-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid rgb(153, 40, 40);
+    padding: 0 1.25rem;
+    text-align: start;
+}
+
+
+
+.hero-links {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 5px;
+   gap: 0.5rem;
+    
+}
+
+.btn, .project-link {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.2 ease;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;   
+    font-size: 1rem;
+}
+
+
+
+
+.about-grid, .project-grid {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid rgb(153, 40, 40);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+    
+    
+}
+
+.about-container {
+    background-color:rgb(120, 139, 181);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.skill-category {
+    background-color: transparent;
+    border: 1px solid #33333e;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    
+}
+
+.skill-category h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.75rem;
+    
+}
+
+.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+   
+}
+
+.tag-list li {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+
+ 
+.project-card {
+    background-color: #344e87;
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+         background-color: #3e3e3e;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .about-grid, .project-grid {
+        width: 85%;
+        max-width: 800px;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+     body {
+         background-color: #c2c2c2;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .about-grid, .project-grid {
+        width: 100%;
+        max-width: 1100px;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+   
+    
+}
+
+
