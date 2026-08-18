@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" type="text/css" href="css/index.css">
-     <script src="script.js" defer></script>
+     <script src="js/script.js" defer></script>
     <title>Ebba Andersson | Portfolio</title>
 </head>
 <body>
@@ -28,9 +28,9 @@
         <p>Blivande Fullstack Java-Utvecklare</p>
         <p>...</p>
         <div class="hero-links">
-             <p class="btn">Plats</p>
-             <a href="https://github.com/eeebbaandersson" target="_blank" rel="noopner" class="btn">Github</a>
-             <a href="https://www.linkedin.com/in/ebba-andersson-80769a1a0/" target="_blank" rel="noopner" class="btn">LinkedIn</a>
+             <p class="location-tag">Göteborg</p>
+             <a href="https://github.com/eeebbaandersson" target="_blank" rel="noopener" class="btn">Github</a>
+             <a href="https://www.linkedin.com/in/ebba-andersson-80769a1a0/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
              <a href="" class="btn">Mail</a>
         </div>
         </div>
@@ -46,11 +46,10 @@
             <!-- Profile-->
             <article class="about-card">
                 <h3>Om mig</h3>
-                
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae commodi deleniti dolorem, doloremque eveniet expedita impedit incidunt inventore officiis pariatur provident, quam quisquam repudiandae sapiente sed, sequi voluptas voluptates</p>
-                <br>
             </article>
 
+    
              <!-- Färdigheter/Techstack-->
               <h3>Kompetenser</h3>
             <div class="skills-wrapper">
@@ -106,7 +105,7 @@
 
                 <article class="education-card">
                  <h4>Fullstack Java Utvecklare</h4>
-                 <p class="education-title">IT-Högskolan | Aug 2025 - Jun 2027</p>
+                 <p class="education-title">IT-Högskolan Göteborg | Aug 2025 - Jun 2027</p>
                  <p class="education-desc">Fullstack-utbildning med fokus på systemutveckling i Java, bestående av följande kurser:
                  </p>
 
@@ -123,12 +122,28 @@
                  </ul>
                </article>
                 
-
                <article class="education-card">
                 <h4>Bildbehandlare/Retuschör</h4>
                 <p class="education-title">Fotoskolan STHLM | Aug 2018 - Dec 2020</p>
                 <p class="education-desc">Yrkesutbildning med fokus på avancerad retusch, färghantering och postproduktion av stillbild/rörligt material. </p>
                </article>
+
+                <h3>Arbetslivserfarenhet</h3>
+                 
+                <article class="work-card">
+                <h4>Servitris/Bartender</h4>
+                 <p class="work-desc">Restaurang Naskovit, Strängnäs | Jun 2023 - Aug 2025</p>
+                </article>
+                
+                <article class="work-card">
+                <h4>Retuschör</h4>
+                 <p class="work-desc">High Mind AB, Göteborg | Aug 2021 - Jun 2023</p>
+                </article>
+                
+                <article class="work-card">
+                <h4>Frilansretuschör</h4>
+                 <p class="work-desc">Enskild firma | 2021</p>
+                 </article>
                 
           </div>
             
@@ -166,19 +181,53 @@
     <!-- CONTACT -->
     <section id="contact">
         <h2>Kontakt</h2>
+        <p>Ta en kaffe, prata kod eller bara säga hej?</p>
+        <br>
         <div class="contact-container">
-            <article class="contact-card">
-                <p>test</p>
-            </article>
+
+            <div class="contact-card">
+                <p>Beskrivande text...</p>
+                <div class="form-group">
+                <p>Tel</p>
+                <p>Email</p>
+                <p>Github knapp</p>
+                <p>LinkedIn knapp</p>
+                </div>
+              
+            </div>
+            
+            <div class="contact-card">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" placeholder="Ditt namn">
+                        <span class="error-message" id="name-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="din.epost@doman.se">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här..."></textarea>
+                         <span class="error-message" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn">Skicka meddelande</button>
+                </form>
+            </div>
+            
         </div>
-       
     </section>
 
     </main>
 
    
     <footer>
-        <p>&copy; 2026 Ebba Andersson.</p>
+        <p>&copy; 2026 Ebba Andersson. </p>
     </footer>
 
 
