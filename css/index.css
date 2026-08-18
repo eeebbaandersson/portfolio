@@ -56,7 +56,7 @@ nav {
 
 nav a {
     text-decoration: none;   
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--text-muted);
     transition: color 0.2s ease;
 }
@@ -173,7 +173,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-.skill-category:hover {
+.skill-category:hover, .education-card:hover, .work-card:hover, .project-card:hover {
     border-color: var(--text-muted);
     transition: all 0.2s ease;
 }
@@ -237,6 +237,15 @@ nav a:hover {
     margin-bottom: 1rem; 
     line-height: 1.5;
 }
+
+.work-item {
+    margin-bottom: 1rem;
+}
+
+.work-item:last-child {
+    margin-bottom: 0;
+}
+
 
 .form-group {
     display: flex;
