@@ -3,7 +3,7 @@
         "id": 1,
         "title": "The Dev RoadMap",
         "description": "Kort beskrivning av projektet..",
-        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "HTML", "CSS", "JavaScript"],
+        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "CSS", "JavaScript"],
         "githubUrl": "https://github.com/eeebbaandersson/dev-roadmap-skilltracker",
         "detailsLink": "pages/dev-roadmap.html"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "Mind-Code Assistant",
         "description": "Kort beskrivning av projektet..",
-        "technologies":["Java", "Spring Boot", "Thymeleaf", "HTML", "CSS", "JavaScript"],
+        "technologies":["Java", "Spring Boot", "Thymeleaf", "CSS", "JavaScript"],
         "githubUrl": "https://github.com/eeebbaandersson/persona-ai-chatbot",
         "detailsLink": "pages/mind-code-assistant.html"
     },

@@ -62,15 +62,6 @@ section {
     border-radius: var(--border-radius-card);
 }
 
-.project-card {
-    /* background-color: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    padding: 1.5rem;
-    border-radius: var(--border-radius-card); */
-
-}
-
-
 .tag-list {
     list-style: none;
     display: flex;
@@ -89,9 +80,23 @@ section {
     margin-top: 0.5rem;
 }
 
-.project-link {
-      display: inline-block;
-    padding: 0.4rem 0.9rem;
+.github-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/github.svg') no-repeat center;
+    -webkit-mask: url('../icons/github.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.btn, .project-link {
+   display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
     background-color: var(--bg-tag);
     color: var(--text-primary);
     border: 1px solid var(--border-subtle);
@@ -99,6 +104,7 @@ section {
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
+    line-height: 1;
     transition: all 0.2s ease;
     margin-top: 2rem;
 
@@ -108,6 +114,19 @@ section {
     border-color: var(--text-muted);
     background-color: #2a2c34;
     transition: all 0.2s ease;
+
+}
+
+.arrow-icon {
+    display: block;
+    transform: rotate(180deg); 
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/arrow.svg') no-repeat center;
+    -webkit-mask: url('../icons/arrow.svg') no-repeat center;
+    mask-size: contain;
 
 }
 
