@@ -1,28 +1,31 @@
 [
+   
     {
         "id": 1,
-        "title": "The Dev RoadMap",
+        "image": "/images/mind-code.png",
+        "imageAlt": "Mind-Code Assistant preview",
+        "title": "Mind-Code Assistant",
         "description": "Kort beskrivning av projektet..",
-        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "CSS", "JavaScript"],
-        "githubUrl": "https://github.com/eeebbaandersson/dev-roadmap-skilltracker",
-        "detailsLink": "pages/dev-roadmap.html"
+        "tags":["Java", "Spring Boot", "Thymeleaf", "CSS", "JavaScript"],
+        "link": "pages/mind-code.html"
     },
     {
         "id": 2,
-        "title": "Mind-Code Assistant",
-        "description": "Kort beskrivning av projektet..",
-        "technologies":["Java", "Spring Boot", "Thymeleaf", "CSS", "JavaScript"],
-        "githubUrl": "https://github.com/eeebbaandersson/persona-ai-chatbot",
-        "detailsLink": "pages/mind-code-assistant.html"
-    },
-    {
-        "id": 3,
         "title": "Pocket Cocktail Club",
+        "image": "/images/cocktail-club.png",
+        "imageAlt": "Pocket Cocktail Club preview",
         "description": "Kort beskrivning av projektet..",
-         "technologies":["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"],
-        "githubUrl": "https://github.com/eeebbaandersson/pocket-cocktail-club",
-        "detailsLink": "pages/pocket-cocktail-club.html"
-
+        "tags":["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"],
+        "link": "pages/cocktail-club.html"
+    },
+     {
+        "id": 3,
+        "image": "/images/dev-roadmap.png",
+        "imageAlt": "The Dev RoadMap preview",
+        "title": "The Dev RoadMap",
+        "description": "Kort beskrivning av projektet..",
+        "tags": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "CSS", "JavaScript"],
+        "link": "pages/dev-roadmap.html"
     }
 
 ]
