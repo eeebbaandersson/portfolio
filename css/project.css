@@ -65,9 +65,8 @@ section {
 .project-image-card {
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-card);
     overflow: hidden;
-    /* border: 1px solid var(--border-subtle); */
     background-color: var(--bg-tag);
     margin-bottom: 1.5rem;
 }

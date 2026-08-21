@@ -1,4 +1,4 @@
-const projectGrid = document.getElementById('project-grid');
+const projectGrid = document.querySelector('#project-grid');
 
 async function loadProjects() {
     try {
