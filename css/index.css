@@ -102,7 +102,7 @@ nav a:hover {
 }
 
 .hero-container h3 {
-    color: var(--text-muted);
+    color: var(--accent-blue);
     font-weight: 500;
 }
 
@@ -164,9 +164,8 @@ nav a:hover {
     color: #121315;
     border: 1px solid transparent;
     font-weight: 600;
-    margin-top: auto;
     align-self: flex-start;
-    margin-top: 1.8rem;
+    margin-top: 0;
 }
 
 .project-link:hover {
@@ -268,10 +267,36 @@ nav a:hover {
     margin-top: 2rem;
 }
 
+.contact-card {
+    display: flex;
+    flex-direction: column;
+}
 
-.about-card p, .project-card p, .contact-card p {
+.contact-card h3 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.about-card p, .contact-card p {
      color: var(--text-muted);
      margin-bottom: 1.5rem;
+}
+
+
+.project-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+   
+}
+
+.project-card .tag-list {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    
+
 }
 
 
