@@ -5,7 +5,10 @@
     --text-primary: #e4e5e7;    
     --text-muted: #9a9b9e;      
     --border-subtle: #2b2d33;   
-    --border-accent: #3b3d45;   
+    --border-accent: #3b3d45; 
+    
+    --accent-blue: #7EA1C4;
+    --accent-blue-hover: #98B8DB;
     
     --border-radius-card: 16px;
     --border-radius-tag: 12px;
@@ -62,6 +65,7 @@ section {
     border-radius: var(--border-radius-card);
 }
 
+
 .project-image-card {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -109,7 +113,7 @@ section {
 }
 
 .btn, .project-link {
-   display: inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
@@ -123,15 +127,33 @@ section {
     font-weight: 500;
     line-height: 1;
     transition: all 0.2s ease;
-    margin-top: 2rem;
+}
 
+.btn:hover {
+    border-color: var(--text-muted);
+    background-color: #2a2c34;
+}
+
+.project-link {
+    background-color: var(--accent-blue);
+    color: #121315;
+    border: 1px solid transparent;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.project-link .arrow-icon {
+    background-color: #121315; 
+}
+
+.project-link .github-icon {
+    background-color: #121315;
 }
 
 .project-link:hover {
-    border-color: var(--text-muted);
-    background-color: #2a2c34;
+    background-color: var(--accent-blue-hover);
+    border-color: transparent;
     transition: all 0.2s ease;
-
 }
 
 .arrow-icon {
@@ -144,8 +166,8 @@ section {
     mask: url('../icons/arrow.svg') no-repeat center;
     -webkit-mask: url('../icons/arrow.svg') no-repeat center;
     mask-size: contain;
-
 }
+
 
 footer {
     text-align: center;
