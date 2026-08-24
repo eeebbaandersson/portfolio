@@ -295,10 +295,8 @@ nav a:hover {
 .project-card .tag-list {
     margin-top: auto;
     margin-bottom: 1.5rem;
-    
 
 }
-
 
 .skill-category {
     background-color: transparent;
@@ -515,6 +513,23 @@ nav a:hover {
 
 .contact-form .btn:hover {
     background-color: var(--accent-blue-hover);
+}
+
+.error-message {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: left;
+
+}
+
+.success-message {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 

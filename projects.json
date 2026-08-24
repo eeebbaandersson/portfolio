@@ -5,7 +5,7 @@
         "image": "/images/mind-code.png",
         "imageAlt": "Mind-Code Assistant preview",
         "title": "Mind-Code Assistant",
-        "description": "En interaktiv chatbot-applikation designad för att ge teknisk hjälp vid komplexa kodproblem, som mentalt stöd när självkänslan behöver en boost.",
+        "description": "En interaktiv chatbot-applikation designad för att ge teknisk hjälp vid komplexa kodproblem, som mentalt stöd när självförtroendet behöver en boost.",
         "tags":["Java", "Spring Boot", "Thymeleaf", "CSS", "JavaScript"],
         "link": "pages/mind-code.html"
     },
@@ -14,7 +14,7 @@
         "title": "Pocket Cocktail Club",
         "image": "/images/cocktail-club.png",
         "imageAlt": "Pocket Cocktail Club preview",
-        "description": "En digital receptbok och inspiration för drinkentusiaster. Låter användaren upptäcka nya favoritrecept baserat på klassiker, tillgängliga ingredienser eller önskad smakprofil.",
+        "description": "En digital receptbok och inspiration för drinkentusiaster. Låter användaren upptäcka nya favoritrecept baserat på klassiker, ingredienser till hands eller personlig smakprofil.",
         "tags":["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"],
         "link": "pages/cocktail-club.html"
     },
@@ -23,7 +23,7 @@
         "image": "/images/dev-roadmap.png",
         "imageAlt": "The Dev RoadMap preview",
         "title": "The Dev RoadMap",
-        "description": "En visuell roadmap och digital skilltracker för utvecklare som gör det lätt att organisera och följa sin egen kompetensutveckling.",
+        "description": "En visuell roadmap och skilltracker för utvecklare med syfte att enklare kunna strukturera och följa sin egna kompetensutveckling.",
         "tags": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "CSS", "JavaScript"],
         "link": "pages/dev-roadmap.html"
     }

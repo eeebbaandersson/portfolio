@@ -1,5 +1,18 @@
 const projectGrid = document.querySelector('#project-grid');
 
+// Form input fields & error msg elements
+const elName = document.querySelector('#name'); 
+const elEmail = document.querySelector('#email');
+const elMessage = document.querySelector('#message');
+
+const elNameError = document.querySelector('#name-error')
+const elEmailError = document.querySelector('#email-error')
+const elMessageError = document.querySelector('#message-error')
+
+const contactForm = document.querySelector('#contact-form');
+
+
+
 async function loadProjects() {
     try {
         const response = await fetch('./projects.json');
@@ -42,6 +55,63 @@ async function loadProjects() {
         `;
     }).join('');
  }
+
+
+ function checkName(){
+    if (elName.value.trim() === '') {
+        elNameError.innerHTML = 'Vänligen fyll i ditt namn';
+    } else {
+         elNameError.innerHTML = '';
+         return true;
+    }
+ }
+
+ function checkEmail(){
+    if (elEmail.value.trim() === '') {
+        elEmailError.innerHTML = "Vänligen fyll i din mailadress";
+    } else {
+         elEmailError.innerHTML = '';
+         return true;
+    }
+ }
+
+ function checkMessageInput() {
+    if (elMessage.value.trim() === '') {
+        elMessageError.innerHTML = 'Glöm inte ditt meddelande!';
+    } else {
+        elMessageError.innerHTML = '';
+        return true;
+    }
+ }
+
+
+ // Event listeners for blur
+ elName.addEventListener('blur', checkName, false);
+ elEmail.addEventListener('blur', checkEmail, false);
+ elMessage.addEventListener('blur', checkMessageInput, false);
+
+
+ // Formhandling to submit-button
+ contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const isNameValid = checkName();
+    const isEmailValid = checkEmail();
+    const isMessageValid = checkMessageInput();
+
+    let statusMessage = document.querySelector('#form-status');
+
+    if (isNameValid && isEmailValid && isMessageValid) {
+        if (!statusMessage) {
+            statusMessage = document.createElement('p');
+            statusMessage.id = 'form-status';
+            statusMessage.className = 'success-message';
+            contactForm.appendChild(statusMessage);
+        }
+        statusMessage.textContent = 'Tack för ditt meddelande! \n Denna funktion är ännu inte helt på plats, så du når mig snabbast via email.';
+        
+    }
+ });
 
  document.addEventListener('DOMContentLoaded',loadProjects);
     
