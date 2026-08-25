@@ -1,6 +1,7 @@
 const projectGrid = document.querySelector('#project-grid');
 
-// Form input fields & error msg elements
+// Form fields & error msg elements
+const contactForm = document.querySelector('#contact-form');
 const elName = document.querySelector('#name'); 
 const elEmail = document.querySelector('#email');
 const elMessage = document.querySelector('#message');
@@ -8,9 +9,6 @@ const elMessage = document.querySelector('#message');
 const elNameError = document.querySelector('#name-error')
 const elEmailError = document.querySelector('#email-error')
 const elMessageError = document.querySelector('#message-error')
-
-const contactForm = document.querySelector('#contact-form');
-
 
 
 async function loadProjects() {
@@ -57,18 +55,20 @@ async function loadProjects() {
  }
 
 
- function checkName(){
+ function checkName() {
     if (elName.value.trim() === '') {
         elNameError.innerHTML = 'Vänligen fyll i ditt namn';
+        return false;
     } else {
          elNameError.innerHTML = '';
          return true;
     }
  }
 
- function checkEmail(){
+ function checkEmail() {
     if (elEmail.value.trim() === '') {
         elEmailError.innerHTML = "Vänligen fyll i din mailadress";
+        return false;
     } else {
          elEmailError.innerHTML = '';
          return true;
@@ -78,12 +78,12 @@ async function loadProjects() {
  function checkMessageInput() {
     if (elMessage.value.trim() === '') {
         elMessageError.innerHTML = 'Glöm inte ditt meddelande!';
+        return false;
     } else {
         elMessageError.innerHTML = '';
         return true;
     }
  }
-
 
  // Event listeners for blur
  elName.addEventListener('blur', checkName, false);
@@ -113,5 +113,7 @@ async function loadProjects() {
     }
  });
 
- document.addEventListener('DOMContentLoaded',loadProjects);
+ document.addEventListener('DOMContentLoaded', () => {
+    loadProjects();
+ });
     
