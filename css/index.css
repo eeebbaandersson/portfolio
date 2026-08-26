@@ -36,22 +36,6 @@ body.light-mode {
     --accent-blue-hover: #9bbbe2;
 }
 
-body.light-mode {
-    --bg-main: #f8f9fa;
-    --bg-card: #ffffff;
-    --bg-tag: #e9ecef;
-    --text-primary: #1a1b1e;
-    --text-muted: #6c757d;
-    --border-subtle: #dee2e6;
-    --border-accent: #ced4da;
-    
-    --bg-btn-hover: #e2e8f0;
-    --border-btn-hover: var(--border-accent);
-    
-    --accent-blue: #7da5d3;
-    --accent-blue-hover: #9bbbe2;
-}
-
 
 * {
     box-sizing: border-box;
