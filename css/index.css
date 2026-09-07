@@ -56,6 +56,11 @@ body {
     line-height: 1.6;   
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h2 {
     font-size: 2.25rem;
     margin-bottom: 10px;
@@ -269,7 +274,7 @@ nav a:hover {
 
 
 .about-grid, .project-grid, .contact-container {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
     display: grid;
@@ -281,8 +286,9 @@ nav a:hover {
 .about-container, .project-card, .contact-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: var(--border-radius-card);
+    width: 100%;
 }
 
 .about-container h3:not(:first-child) {
@@ -449,11 +455,23 @@ nav a:hover {
     background-color: transparent;
     border: 1px solid var(--border-subtle);
     border-radius: var(--border-radius-card);
-    padding: 1rem;
+    padding: 0.85rem 0.75rem;
     margin-bottom: 1.25rem;
     color: var(--text-primary);
     text-decoration: none;
     transition: 0.2s ease;
+    font-size: 0.85rem;
+
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.info-container span, 
+.info-container p {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .info-container:hover {
@@ -468,7 +486,7 @@ nav a:hover {
 .contact-links {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 1.5rem;
     gap: 0.5rem;
 }
