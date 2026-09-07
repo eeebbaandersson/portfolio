@@ -2,7 +2,7 @@
    
     {
         "id": 1,
-        "image": "/images/mind-code.png",
+        "image": "./images/mind-code.png",
         "imageAlt": "Mind-Code Assistant preview",
         "title": "Mind-Code Assistant",
         "description": "En interaktiv chatbot-applikation designad för att ge teknisk hjälp vid komplexa kodproblem, som mentalt stöd när självförtroendet behöver en boost.",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "title": "Pocket Cocktail Club",
-        "image": "/images/cocktail-club.png",
+        "image": "./images/cocktail-club.png",
         "imageAlt": "Pocket Cocktail Club preview",
         "description": "En digital receptbok och inspiration för drinkentusiaster. Låter användaren upptäcka nya favoritrecept baserat på klassiker, ingredienser till hands eller personlig smakprofil.",
         "tags":["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"],
@@ -20,7 +20,7 @@
     },
      {
         "id": 3,
-        "image": "/images/dev-roadmap.png",
+        "image": "./images/dev-roadmap.png",
         "imageAlt": "The Dev RoadMap preview",
         "title": "The Dev RoadMap",
         "description": "En visuell roadmap och skilltracker för utvecklare med syfte att enklare kunna strukturera och följa sin egna kompetensutveckling.",
