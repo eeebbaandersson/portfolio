@@ -1,16 +1,24 @@
 [
-   
-    {
+   {
         "id": 1,
-        "image": "./images/mind-code.png",
-        "imageAlt": "Mind-Code Assistant preview",
-        "title": "Mind-Code Assistant",
-        "description": "En interaktiv chatbot-applikation designad för att ge teknisk hjälp vid komplexa kodproblem, som mentalt stöd när självförtroendet behöver en boost.",
-        "tags":["Java", "Spring Boot", "Thymeleaf", "CSS", "JavaScript"],
-        "link": "pages/mind-code.html"
+        "image": "./images/crux-bouldering-tracker.png",
+        "imageAlt": "CRUX - Bouldering Tracker preview",
+        "title": "CRUX - Bouldering Tracker",
+        "description": "En reaktiv Vue.js-applikation för att logga boulderingproblem, följa aktiva projekt och analysera personlig träninsgsstatistik. Byggd mobil-först för direkt användning från gymmet.",
+        "tags":["Vue.js", "JavaScript", "HTML", "CSS", "localStorage", "GitHub Pages"],
+        "link": "pages/crux-bouldering-tracker.html"
+    },
+     {
+        "id": 2,
+        "image": "./images/dev-roadmap.png",
+        "imageAlt": "The Dev RoadMap preview",
+        "title": "The Dev RoadMap",
+        "description": "En visuell roadmap och skilltracker för utvecklare med syfte att enklare kunna strukturera och följa sin egna kompetensutveckling.",
+        "tags": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "CSS", "JavaScript"],
+        "link": "pages/dev-roadmap.html"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Pocket Cocktail Club",
         "image": "./images/cocktail-club.png",
         "imageAlt": "Pocket Cocktail Club preview",
@@ -18,14 +26,16 @@
         "tags":["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"],
         "link": "pages/cocktail-club.html"
     },
-     {
-        "id": 3,
-        "image": "./images/dev-roadmap.png",
-        "imageAlt": "The Dev RoadMap preview",
-        "title": "The Dev RoadMap",
-        "description": "En visuell roadmap och skilltracker för utvecklare med syfte att enklare kunna strukturera och följa sin egna kompetensutveckling.",
-        "tags": ["Java", "Spring Boot", "PostgreSQL", "Thymeleaf", "CSS", "JavaScript"],
-        "link": "pages/dev-roadmap.html"
+    {
+        "id": 2,
+        "image": "./images/mind-code.png",
+        "imageAlt": "Mind-Code Assistant preview",
+        "title": "Mind-Code Assistant",
+        "description": "En interaktiv chatbot-applikation designad för att ge teknisk hjälp vid komplexa kodproblem, som mentalt stöd när självförtroendet behöver en boost.",
+        "tags":["Java", "Spring Boot", "Thymeleaf", "CSS", "JavaScript"],
+        "link": "pages/mind-code.html"
     }
+    
+    
 
 ]
