@@ -54,11 +54,11 @@ body {
     color: var(--text-primary);
     font-family: var(--font-main);
     line-height: 1.6;   
+     position: relative;
 }
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 h2 {
