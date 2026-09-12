@@ -62,8 +62,9 @@ html, body {
 }
 
 h2 {
-    font-size: 2.25rem;
-    margin-bottom: 10px;
+    font-size: 1.85rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -627,6 +628,11 @@ footer {
     html {
         scroll-padding-top: 60px;
     }
+
+    h2 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+}
 
     .menu-toggle-btn {
         display: none;
