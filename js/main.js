@@ -28,6 +28,22 @@ async function loadProjects() {
     }   
  }
 
+ function initMobileMenu() {
+     const menuToggleBtn = document.querySelector('#menu-toggle-btn');
+     const navLinks = document.querySelector('.nav-links');
+
+     if (!menuToggleBtn || !navLinks) return;
+
+     const toggleMenu = () => navLinks.classList.toggle('active');
+     const closeMenu = () => navLinks.classList.remove('active');
+
+     menuToggleBtn.addEventListener('click', toggleMenu);
+
+     document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+     });
+ }
+
  function renderProjects(projects) {
     projectGrid.innerHTML = projects.map(project => {
 
@@ -115,5 +131,6 @@ async function loadProjects() {
 
  document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
+    initMobileMenu();
  });
     
