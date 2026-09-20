@@ -5,7 +5,7 @@
         "imageAlt": "CRUX - Bouldering Tracker preview",
         "title": "CRUX - Bouldering Tracker",
         "description": "En reaktiv Vue.js-applikation för att logga boulderingproblem, följa aktiva projekt och analysera personlig träninsgsstatistik. Byggd mobil-först för direkt användning från gymmet.",
-        "tags":["Vue.js", "JavaScript", "HTML", "CSS", "localStorage", "GitHub Pages"],
+        "tags":["Node.js","Express.js","Vue.js","PostgreSQL", "JavaScript", "HTML", "CSS", "localStorage", "GitHub Pages"],
         "link": "pages/crux-bouldering-tracker.html"
     },
      {
