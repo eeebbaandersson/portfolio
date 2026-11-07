@@ -54,7 +54,7 @@ body {
     color: var(--text-primary);
     font-family: var(--font-main);
     line-height: 1.6;   
-     position: relative;
+    position: relative;
 }
 
 html, body {
@@ -69,11 +69,12 @@ h2 {
 
 h3 {
     margin-bottom: 0.5rem;
+    margin-top: -0.5rem;
 }
 
 
 section {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -227,21 +228,19 @@ section {
 .project-card {
     display: flex;
     flex-direction: column;
+    height: 100%; 
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    padding: 2rem 1.5rem;
+    border-radius: var(--border-radius-card);
+    width: 100%;
 }
 
-.project-link {
-    background-color: var(--accent-blue);
-    color: #121315;
-    border: 1px solid transparent;
-    font-weight: 600;
-    align-self: flex-start;
-    margin-top: 0;
-}
-
-.project-link:hover {
-    background-color: var(--accent-blue-hover);
-    border-color: transparent;
-    transition: all 0.2s ease;
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex; 
+    flex-direction: column;
 }
 
 .section-badge {
@@ -299,13 +298,35 @@ section {
 }
 
 .mail-icon {
-       display: block;
+    display: block;
     width: 16px;
     height: 16px;
     flex-shrink: 0;
     background-color: var(--text-primary);
     mask: url('../icons/mail.svg') no-repeat center;
      -webkit-mask: url('../icons/mail.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.sun-icon {
+     display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/sun.svg') no-repeat center;
+     -webkit-mask: url('../icons/sun.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.moon-icon {
+     display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/moon.svg') no-repeat center;
+     -webkit-mask: url('../icons/moon.svg') no-repeat center;
     mask-size: contain;
 }
 
@@ -329,7 +350,7 @@ section {
 .about-container, .project-card, .contact-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    padding: 1.25rem;
+    padding: 2rem 1.5rem;
     border-radius: var(--border-radius-card);
     width: 100%;
 }
@@ -365,7 +386,7 @@ section {
 
 .project-card .tag-list {
     margin-top: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 
 }
 
@@ -391,6 +412,10 @@ section {
     transition: all 0.2s ease;
 }
 
+.project-card:hover {
+    cursor: pointer;
+}
+
 .tag-list {
     list-style: none;
     display: flex;
@@ -407,8 +432,6 @@ section {
     font-size: 0.85rem;
     font-weight: 500;
 }
-
-
 
 .education-wrapper h3 {
     margin-bottom: 1.25rem;
@@ -467,6 +490,7 @@ section {
 }
 
 .project-image-card {
+    position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: var(--border-radius-tag);
@@ -481,8 +505,39 @@ section {
     object-fit: cover;
     object-position: top center;
     display: block;
+    transition: transform 0.3s ease;
 }
 
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(18, 19, 21, 0.6); 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.project-overlay span {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+   
+   
+    transition: transform 0.25s ease;
+}
+
+.project-card-link:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card-link:hover .project-overlay span {
+    transform: translateY(0);
+}
 
 .form-group {
     display: flex;

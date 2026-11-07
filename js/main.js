@@ -52,20 +52,23 @@ async function loadProjects() {
         .join('');
 
        return `
-            <article class="project-card">
-                <div class="project-image-card">
-                    <img src="${project.image}" alt="${project.imageAlt}">
-                </div>
+           <a href="${project.link}" class="project-card-link">
+                <article class="project-card">
+                    <div class="project-image-card">
+                        <img src="${project.image}" alt="${project.imageAlt}">
+                        <div class="project-overlay">
+                            <span>Visa projekt →</span>
+                        </div>
+                    </div>
 
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
 
-                <ul class="tag-list">
-                    ${tagsHtml}
-                </ul>
-
-                <a href="${project.link}" class="project-link">Visa projekt</a>
-            </article>
+                    <ul class="tag-list">
+                        ${tagsHtml}
+                    </ul>
+                </article>
+            </a>
         `;
     }).join('');
  }

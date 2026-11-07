@@ -6,11 +6,11 @@ const themeIcon = document.querySelector('#theme-icon');
 function setTheme(isLight) {
     if (isLight) {
         document.body.classList.add('light-mode');
-        themeIcon.textContent = '🌙';
+        themeIcon.className = 'moon-icon';
         localStorage.setItem('theme','light');
     } else {
         document.body.classList.remove('light-mode');
-        themeIcon.textContent = '☀️';
+        themeIcon.className = 'sun-icon';
         localStorage.setItem('theme', 'dark');
     }
 }

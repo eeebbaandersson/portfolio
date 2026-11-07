@@ -1,11 +1,20 @@
 [
+       {
+        "id": 2,
+        "image": "./images/java-quest.png",
+        "imageAlt": "The Dev RoadMap preview",
+        "title": "Java Quest - Gamified Learning App",
+        "description": "En gamifierad webbapplikation som gör Java-programmering till ett spel. Slutför utmaningar, samla poäng och nå nya nivåer på resan från nybörjare till Java Master.",
+        "tags": ["Node.js", "Express.js", "Vue.js + Vite", "MySQL", "HTML", "CSS", "JavaScript", "localStorage", "GitHub Pages"],
+        "link": "pages/java-quest.html"
+    },
    {
         "id": 1,
         "image": "./images/crux-bouldering-tracker.png",
         "imageAlt": "CRUX - Bouldering Tracker preview",
         "title": "CRUX - Bouldering Tracker",
         "description": "En reaktiv Vue.js-applikation för att logga boulderingproblem, följa aktiva projekt och analysera personlig träninsgsstatistik. Byggd mobil-först för direkt användning från gymmet.",
-        "tags":["Node.js","Express.js","Vue.js","PostgreSQL", "JavaScript", "HTML", "CSS", "localStorage", "GitHub Pages"],
+        "tags":["Node.js","Express.js","Vue.js","PostgreSQL", "HTML", "CSS", "JavaScript", "localStorage", "GitHub Pages"],
         "link": "pages/crux-bouldering-tracker.html"
     },
      {

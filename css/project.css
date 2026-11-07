@@ -52,6 +52,28 @@ body.light-mode {
     background-color: var(--bg-btn-hover, var(--bg-tag));
 }
 
+.sun-icon {
+     display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/sun.svg') no-repeat center;
+     -webkit-mask: url('../icons/sun.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.moon-icon {
+     display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/moon.svg') no-repeat center;
+     -webkit-mask: url('../icons/moon.svg') no-repeat center;
+    mask-size: contain;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -184,18 +206,29 @@ section {
     mask-size: contain;
 }
 
+.globe-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    mask: url('../icons/globe.svg') no-repeat center;
+    -webkit-mask: url('../icons/globe.svg') no-repeat center;
+    mask-size: contain;
+}
+
 .btn, .project-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     background-color: var(--bg-tag);
     color: var(--text-primary);
     border: 1px solid var(--border-subtle);
     border-radius: var(--border-radius-tag);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     font-weight: 500;
     line-height: 1;
     transition: all 0.2s ease;
@@ -214,11 +247,9 @@ section {
     margin-top: 2rem;
 }
 
-.project-link .arrow-icon {
-    background-color: #121315; 
-}
-
-.project-link .github-icon {
+.project-link .arrow-icon,
+.project-link .github-icon,
+.project-link .globe-icon {
     background-color: #121315;
 }
 
