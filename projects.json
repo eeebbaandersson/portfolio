@@ -1,15 +1,15 @@
 [
        {
-        "id": 2,
+        "id": 1,
         "image": "./images/java-quest.png",
-        "imageAlt": "The Dev RoadMap preview",
-        "title": "Java Quest - Gamified Learning App",
+        "imageAlt": "Java Quest preview",
+        "title": "Java Quest - Gamified Learning",
         "description": "En gamifierad webbapplikation som gör Java-programmering till ett spel. Slutför utmaningar, samla poäng och nå nya nivåer på resan från nybörjare till Java Master.",
         "tags": ["Node.js", "Express.js", "Vue.js + Vite", "MySQL", "HTML", "CSS", "JavaScript", "localStorage", "GitHub Pages"],
         "link": "pages/java-quest.html"
     },
    {
-        "id": 1,
+        "id": 2,
         "image": "./images/crux-bouldering-tracker.png",
         "imageAlt": "CRUX - Bouldering Tracker preview",
         "title": "CRUX - Bouldering Tracker",
@@ -18,7 +18,7 @@
         "link": "pages/crux-bouldering-tracker.html"
     },
      {
-        "id": 2,
+        "id": 3,
         "image": "./images/dev-roadmap.png",
         "imageAlt": "The Dev RoadMap preview",
         "title": "The Dev RoadMap",
@@ -27,7 +27,7 @@
         "link": "pages/dev-roadmap.html"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Pocket Cocktail Club",
         "image": "./images/cocktail-club.png",
         "imageAlt": "Pocket Cocktail Club preview",
@@ -36,7 +36,7 @@
         "link": "pages/cocktail-club.html"
     },
     {
-        "id": 4,
+        "id": 5,
         "image": "./images/mind-code.png",
         "imageAlt": "Mind-Code Assistant preview",
         "title": "Mind-Code Assistant",
